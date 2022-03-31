@@ -2,6 +2,7 @@ body {
   background-image: url('../../assets/Background.png') !important;
   background: #121829;
   font-family: 'Poppins';
+  margin: 0;
 }
 
 ul {
