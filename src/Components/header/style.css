@@ -12,8 +12,8 @@ a {
   text-decoration: none;
 }
 
-.fixed {
-  position: fixed;
+.sticky {
+  position: sticky;
 }
 
 .z-header {
