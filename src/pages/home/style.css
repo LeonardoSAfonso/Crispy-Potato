@@ -98,27 +98,22 @@ a {
   color: #ebeef5;
 }
 
-.input1 {
+.input {
   text-decoration: none;
+  display: flex;
 }
 
 button {
-  display: flex;
+  
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
   position: static;
-  width: 121px;
+  width: 150px;
   left: calc(50% - 121px/2);
   top: 0%;
   bottom: 0%;
-  /* Primary/400 */
   background: #F9C204;
-  /* Primary/400 */
-  border: 2px solid #F9C204;
-  border-radius: 12px;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -126,34 +121,55 @@ button {
 }
 
 .file {
-  display: flex;
-  padding: 12px 16px;
-  flex-direction: row;
-  align-items: center;
-  position: static;
-  width: 384px;
-  left: calc(50% - 384px/2);
-  top: 0%;
-  bottom: 0%;
-  margin-left: 120px;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid #323b54;
-  box-sizing: border-box;
-  border-radius: 12px;
+   
+    padding: 0 16px;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 384px;
+    height: 48px;
+    margin-left: 120px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #323b54;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
 
 .button {
-  background: #f9c204;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  margin-left: 520px;
-  width: 70px;
-  height: 20px;
+    background: #f9c204;   
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: 8px;
+    width: 80px;
+    height: 48px;
+    border: 2px solid #F9C204;
+    border-radius: 12px;
 }
 
 .posters {
-  margin-left: 120px;
-  margin-top: 100px;
+    margin-left: 120px;  
+    margin-top: 100px;
+}
+
+.select{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+
+    position: absolute;
+    width: 368px;
+    height: 56px;
+    left: 120px;
+    top: 472px;
+
+    /* Black/20 */
+
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(80px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 12px;
 }
