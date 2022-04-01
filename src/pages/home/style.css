@@ -1,6 +1,6 @@
 body {
-  background-image: url('../../assets/Background.png') !important;
-  background: #121829;
+  background: #121829 url('../../assets/Background.png');
+  background-size: cover;
   font-family: 'Poppins';
   margin: 0;
 }
