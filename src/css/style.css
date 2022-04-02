@@ -1,5 +1,5 @@
 body {
-  background: #121829 url('../../assets/Background.png');
+  background: #121829 url('../../src/assets/Background.png');
   background-size: cover;
   font-family: 'Poppins';
   margin: 0;
@@ -100,7 +100,11 @@ a {
 
 .input {
   text-decoration: none;
-  display: flex;
+  display: flex; 
+}
+
+.file{
+  color: #ebeef5;
 }
 
 button {
