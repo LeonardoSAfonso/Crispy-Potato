@@ -1,5 +1,5 @@
 body {
-  background: #121829 url('../../assets/Background.png');
+  background: #121829 url('../../src/assets/Background.png');
   background-size: cover;
   font-family: 'Poppins';
   margin: 0;
@@ -84,7 +84,7 @@ a {
   height: auto;
 }
 
-.titulo1 {
+.h1home {
   font-size: 64px;
   font-weight: 600;
   line-height: 80px;
@@ -93,14 +93,18 @@ a {
   color: #f9c204;
 }
 
-.titulo2 {
+.h2home {
   margin-left: 120px;
   color: #ebeef5;
 }
 
 .input {
   text-decoration: none;
-  display: flex;
+  display: flex; 
+}
+
+.file{
+  color: #ebeef5;
 }
 
 button {
@@ -122,54 +126,57 @@ button {
 
 .file {
    
-    padding: 0 16px;
-    flex-direction: row;
-    align-items: center;
-    position: static;
-    width: 384px;
-    height: 48px;
-    margin-left: 120px;
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #323b54;
-    box-sizing: border-box;
-    border-radius: 12px;
+  padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
+  position: static;
+  width: 384px;
+  height: 48px;
+  margin-left: 120px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #323b54;
+  box-sizing: border-box;
+  border-radius: 12px;
 }
 
 .button {
-    background: #f9c204;   
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin-left: 8px;
-    width: 80px;
-    height: 48px;
-    border: 2px solid #F9C204;
-    border-radius: 12px;
+  background: #f9c204;   
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-left: 8px;
+  width: 80px;
+  height: 48px;
+  border: 2px solid #F9C204;
+  border-radius: 12px;
 }
 
 .posters {
-    margin-left: 120px;  
-    margin-top: 100px;
+  margin-left: 120px;  
+  margin-top: 100px;
+}
+
+#All, #Filmes, #Series, #Animes{
+  display: inline;
 }
 
 .select{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 368px;
+  height: 56px;
+  left: 120px;
+  top: 472px;
 
-    position: absolute;
-    width: 368px;
-    height: 56px;
-    left: 120px;
-    top: 472px;
+  /* Black/20 */
 
-    /* Black/20 */
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(80px);
+  /* Note: backdrop-filter has minimal browser support */
 
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(80px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+  border-radius: 12px;
 }

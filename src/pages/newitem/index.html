@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <title>Navbar</title>
 </head>
+
 <body>
-    
+  <header class="z-header fixed">
+    <div class="head flex content-just-between items-center container">
+      <div>
+        <a href="#">
+          <img src="/src/assets/logo.png" alt="Logo" id="logo">
+        </a>
+      </div>
+
+      <nav>
+        <ul class="flex">
+          <li><a href="#" class="nav-item">Filmes</a></li>
+          <li><a href="#" class="nav-item">Series</a></li>
+          <li><a href="#" class="nav-item">Animes</a></li>
+          <li><a href="#" class="nav-item">Jogos</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+  <h1>Recomendar conteúdo</h1>
+
+  <div class="input">        
+    <input type="text" class="file" value="Busque series, filmes, jogos e animes" class="input1">
+    <button class="button">Search</button>  
+  </div>
+  
 </body>
+
 </html>
