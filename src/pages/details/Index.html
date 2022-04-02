@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <title>Navbar</title>
 </head>
 
@@ -21,7 +22,7 @@
         </a>
       </div>
 
-      <nav>
+      <nav class="header-nav">
         <ul class="flex">
           <li><a href="#" class="nav-item">Filmes</a></li>
           <li><a href="#" class="nav-item">Series</a></li>
@@ -30,9 +31,20 @@
         </ul>
       </nav>
 
-
+      <div>
+        <i class="bx bx-menu nav-menu" onclick="console.log('clicou')"></i>
+      </div>
     </div>
   </header>
+
+  <div class="mobile-menu">
+    <ul class="">
+      <li><a href="#" class="nav-item">Filmes</a></li>
+      <li><a href="#" class="nav-item">Series</a></li>
+      <li><a href="#" class="nav-item">Animes</a></li>
+      <li><a href="#" class="nav-item">Jogos</a></li>
+    </ul>
+  </div>
 
 
   <div class="main-banner-container">
@@ -47,10 +59,33 @@
 
   <div class="details-container">
     <img class="details-banner" src="../../assets/avengers-banner.png" alt="Banner">
-    <div>
-      <h3>Part of the journey is the end.</h3>
-      <p>After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order
+    <div class="details-content">
+      <h3 class="details-catchphrase">Part of the journey is the end.</h3>
+
+      <p class="details-p">After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order
         to the universe once and for all, no matter what consequences may be in store.</p>
+
+      <i class="bx bx-star classification">5.0</i>
+
+      <div>
+        <p class="details-spec-title">Type</p>
+        <p class="details-spec-p">Movie</p>
+      </div>
+
+      <div>
+        <p class="details-spec-title">Release Date</p>
+        <p class="details-spec-p">2019-04-24</p>
+      </div>
+
+      <div>
+        <p class="details-spec-title">Run Time</p>
+        <p class="details-spec-p">181 min</p>
+      </div>
+
+      <div>
+        <p class="details-spec-title">Genres</p>
+        <p class="details-spec-p">Adventure, Science Fiction, Action</p>
+      </div>
     </div>
   </div>
 

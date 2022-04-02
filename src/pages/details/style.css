@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+}
+
 body {
   background-image: url('../../assets/Background.png') !important;
   background: #121829;
@@ -29,7 +36,7 @@ a {
   height: 80px;
   background: rgba(18, 24, 41, 0.8);
   backdrop-filter: blur(40px);
-  padding: 16px;
+  margin: 16px;
   backdrop-filter: blur(40px);
 }
 
@@ -40,6 +47,15 @@ a {
   color: #A8AEBF;
   font-weight: 600;
   font-size: 16px;
+}
+
+.bx.bx-menu.nav-menu {
+  display: none;
+  position: relative;
+  margin: 0px 16px;
+  color: #A8AEBF;
+  font-weight: 600;
+  font-size: 45px;
 }
 
 .nav-item:after {
@@ -84,8 +100,14 @@ a {
   height: auto;
 }
 
+.mobile-menu {
+  display: none;
+  z-index: 100;
+  width: 100%;
+}
+
 .main-banner-container {
-  padding: 10px 5%;
+  margin: 10px 5%;
 }
 
 .main-banner {
@@ -109,13 +131,12 @@ a {
   color: #BEB7FB;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 600;
 }
 
 .title-div {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 5% 7%;
 }
 
 .title-span {
@@ -128,11 +149,91 @@ a {
 
 .details-container {
   display: flex;
-  padding: 20px 15%;
+  margin: 120px 15%;
+  justify-content: space-between;
 }
 
 .details-banner {
-  padding: 20px 0;
+  max-width: 45%;
   width: 480px;
   height: 720px;
+}
+
+.details-content {
+  max-width: 45%;
+}
+
+.details-content>* {
+  margin: 0 0 24px;
+}
+
+.details-catchphrase {
+  font-size: 24px;
+  color: #EBEEF5;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 32px;
+}
+
+.details-p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #8E95A9;
+}
+
+.classification {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+  color: #FFAD49;
+  padding: 6px 8px;
+  font-size: 16px;
+  backdrop-filter: blur(80px);
+}
+
+.details-spec-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #767E94;
+}
+
+.details-spec-p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #C3C8D4;
+}
+
+@media only screen and (max-width: 1300px) {
+  .header-nav {
+    display: none;
+  }
+  .bx.bx-menu.nav-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .main-banner-container {
+    justify-content: center;
+  }
+  .main-banner {
+    display: none;
+  }
+  .title-container {
+    position: inherit;
+    max-width: 100%;
+  }
+  .details-container {
+    display: block;
+    margin: 5%;
+  }
+  .details-container>* {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10% auto;
+  }
+  .details-banner {
+    max-width: 100%;
+  }
+  .details-content {
+    max-width: 90%;
+  }
 }
