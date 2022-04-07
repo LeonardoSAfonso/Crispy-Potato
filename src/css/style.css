@@ -103,12 +103,7 @@ a {
   display: flex; 
 }
 
-.file{
-  color: #ebeef5;
-}
-
-button {
-  
+button { 
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -124,8 +119,7 @@ button {
   margin: 0px 0px;
 }
 
-.file {
-   
+.file {  
   padding: 0 16px;
   flex-direction: row;
   align-items: center;
@@ -137,7 +131,10 @@ button {
   border: 1px solid #323b54;
   box-sizing: border-box;
   border-radius: 12px;
+  color: #d2e61f;
 }
+
+
 
 .button {
   background: #f9c204;   
@@ -152,31 +149,85 @@ button {
   border-radius: 12px;
 }
 
-.posters {
-  margin-left: 120px;  
-  margin-top: 100px;
-}
-
-#All, #Filmes, #Series, #Animes{
-  display: inline;
-}
-
 .select{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 8px;
   position: absolute;
   width: 368px;
   height: 56px;
-  left: 120px;
-  top: 472px;
-
+  margin-left: 120px;
+  margin-top: 10px;
   /* Black/20 */
-
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(80px);
   /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 12px;
 }
+
+.options{
+  display: inline-flex;
+  padding: 0 25px 0 25px;
+  color: #ebeef5;
+  position: static;
+}
+
+li{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#todos{
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  background: #F9C204;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#filmes{
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}  
+
+#series{
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+}
+
+#animes{
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.h3home{
+  margin-left: 120px;
+  margin-top: 100px;
+  color: #ebeef5;
+}
+.banner {
+  margin-left: 120px;  
+}
+
