@@ -391,10 +391,9 @@ li {
   
 }
 
-.banner {
- 
-  width: 266px;
-  height: 400px; 
+.banner { 
+  width: 220px;
+  height: 310px; 
   border-radius: 8px;
 }
 
@@ -402,11 +401,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 8px 8px 16px;
+  padding: 16px 16px 16px;
   flex-wrap: wrap;
   position: relative;
-  width: 282px;
-  height: 480px;
+  width: 240px;
+  height: 390px;
   left: 0px;
   top: 0px;
   margin: 10px 20px;
