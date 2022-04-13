@@ -252,36 +252,14 @@ a {
   color: #ebeef5;
 }
 
-.input {
+.container-input {
   text-decoration: none;
   display: flex;
 }
 
-.file {
-  color: #ebeef5;
-}
 
-.file {
-  display: flex;
-}
 
-button {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  width: 150px;
-  left: calc(50% - 121px/2);
-  top: 0%;
-  bottom: 0%;
-  background: #F9C204;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
-}
-
-.file {
+.input {
   padding: 0 16px;
   flex-direction: row;
   align-items: center;
@@ -293,7 +271,9 @@ button {
   border: 1px solid #323b54;
   box-sizing: border-box;
   border-radius: 12px;
-  color: #d2e61f;
+  color: #ebeef5;
+  display: flex;
+
 }
 
 .button {
