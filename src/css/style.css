@@ -1,6 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  vertical-align: baseline;
+}
+
 body {
-  background: #121829 url('../../src/assets/Background.png');
-  background-size: cover;
+  background: url('../../assets/Background.png') #121829;
+  background: #121829;
   font-family: 'Poppins';
   margin: 0;
 }
@@ -29,7 +36,7 @@ a {
   height: 80px;
   background: rgba(18, 24, 41, 0.8);
   backdrop-filter: blur(40px);
-  padding: 16px;
+  margin: 16px;
   backdrop-filter: blur(40px);
 }
 
@@ -40,6 +47,15 @@ a {
   color: #A8AEBF;
   font-weight: 600;
   font-size: 16px;
+}
+
+.bx.bx-menu.nav-menu {
+  display: none;
+  position: relative;
+  margin: 0px 16px;
+  color: #A8AEBF;
+  font-weight: 600;
+  font-size: 45px;
 }
 
 .nav-item:after {
@@ -84,6 +100,144 @@ a {
   height: auto;
 }
 
+.mobile-menu {
+  display: none;
+  z-index: 100;
+  width: 100%;
+}
+
+.main-banner-container {
+  margin: 10px 5%;
+}
+
+.main-banner {
+  width: 1200px;
+  height: 480px;
+  border-radius: 40px;
+}
+
+.title-container {
+  background: rgba(32, 40, 62, 0.8);
+  border-radius: 24px;
+  width: 448px;
+  height: 128px;
+  position: absolute;
+  left: 200px;
+  top: 528px;
+  backdrop-filter: blur(5px);
+}
+
+.category-a {
+  color: #BEB7FB;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.title-div {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 7%;
+}
+
+.title-span {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #EBEEF5;
+  margin-top: 15px;
+}
+
+.details-container {
+  display: flex;
+  margin: 120px 15%;
+  justify-content: space-between;
+}
+
+.details-banner {
+  max-width: 45%;
+  width: 480px;
+  height: 720px;
+}
+
+.details-content {
+  max-width: 45%;
+}
+
+.details-content>* {
+  margin: 0 0 24px;
+}
+
+.details-catchphrase {
+  font-size: 24px;
+  color: #EBEEF5;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 32px;
+}
+
+.details-p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #8E95A9;
+}
+
+.classification {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 8px;
+  color: #FFAD49;
+  padding: 6px 8px;
+  font-size: 16px;
+  backdrop-filter: blur(80px);
+}
+
+.details-spec-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #767E94;
+}
+
+.details-spec-p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #C3C8D4;
+}
+
+@media only screen and (max-width: 1300px) {
+  .header-nav {
+    display: none;
+  }
+  .bx.bx-menu.nav-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .main-banner-container {
+    justify-content: center;
+  }
+  .main-banner {
+    display: none;
+  }
+  .title-container {
+    position: inherit;
+    max-width: 100%;
+  }
+  .details-container {
+    display: block;
+    margin: 5%;
+  }
+  .details-container>* {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10% auto;
+  }
+  .details-banner {
+    max-width: 100%;
+  }
+  .details-content {
+    max-width: 90%;
+  }
+}
+
 .h1home {
   font-size: 64px;
   font-weight: 600;
@@ -100,10 +254,18 @@ a {
 
 .input {
   text-decoration: none;
-  display: flex; 
+  display: flex;
 }
 
-button { 
+.file {
+  color: #ebeef5;
+}
+
+.file {
+  display: flex;
+}
+
+button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -119,7 +281,7 @@ button {
   margin: 0px 0px;
 }
 
-.file {  
+.file {
   padding: 0 16px;
   flex-direction: row;
   align-items: center;
@@ -134,10 +296,8 @@ button {
   color: #d2e61f;
 }
 
-
-
 .button {
-  background: #f9c204;   
+  background: #f9c204;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -149,7 +309,22 @@ button {
   border-radius: 12px;
 }
 
-.select{
+.posters {
+  margin-left: 120px;
+  margin-top: 100px;
+}
+
+#All,
+#Filmes,
+#Series,
+#Animes {
+  display: inline;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 8px;
   position: absolute;
   width: 368px;
@@ -163,19 +338,19 @@ button {
   border-radius: 12px;
 }
 
-.options{
+.options {
   display: inline-flex;
   padding: 0 25px 0 25px;
   color: #ebeef5;
   position: static;
 }
 
-li{
+li {
   font-size: 16px;
   font-weight: 600;
 }
 
-#todos{
+#todos {
   padding: 8px 15px;
   color: #ebeef5;
   position: static;
@@ -188,30 +363,7 @@ li{
   flex-grow: 0;
 }
 
-#filmes{
-  padding: 8px 15px;
-  color: #ebeef5;
-  position: static;
-  width: 10px;
-  height: 20px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}  
-
-#series{
-  padding: 8px 15px;
-  color: #ebeef5;
-  position: static;
-  width: 10px;
-  height: 20px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  
-}
-
-#animes{
+#filmes {
   padding: 8px 15px;
   color: #ebeef5;
   position: static;
@@ -222,7 +374,29 @@ li{
   flex-grow: 0;
 }
 
-.h3home{
+#series {
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#animes {
+  padding: 8px 15px;
+  color: #ebeef5;
+  position: static;
+  width: 10px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.h3home {
   margin-left: 120px;
   margin-top: 100px;
   color: #ebeef5;
