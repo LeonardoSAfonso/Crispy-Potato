@@ -398,9 +398,9 @@ li {
 
 }
 
-.banner { 
+.banner {
   width: 220px;
-  height: 310px; 
+  height: 310px;
   border-radius: 8px;
 }
 
@@ -471,7 +471,8 @@ li {
   border: 2px solid #F9C204;
   border-radius: 12px;
 }
-.button-newitem:hover{
+
+.button-newitem:hover {
   opacity: 0.8;
 }
 
@@ -490,7 +491,8 @@ li {
   color: #ebeef5;
   display: flex;
 }
-.input-newitem{
+
+.input-newitem {
   font-family: Poppins;
   font-size: 14px;
   padding: 0 16px;
@@ -507,4 +509,23 @@ li {
   color: #ebeef5;
   display: flex;
 
+}
+
+.linkedin_git {
+  position: static;
+  width: 70px;
+  height: 24px;
+  left: 26px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #378FE9;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
 }
