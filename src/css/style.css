@@ -6,8 +6,8 @@
 }
 
 body {
-  background: url('../assets/Background.png') #121829 no-repeat;
-  background-size: cover;
+  background: url('../assets/Background.png') #121829;
+  background: cover;
   font-family: 'Poppins';
   margin: 0;
 }
