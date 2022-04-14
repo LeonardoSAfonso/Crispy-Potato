@@ -6,8 +6,8 @@
 }
 
 body {
-  background: url('../../assets/Background.png') #121829;
-  background: #121829;
+  background: url('../assets/Background.png') #121829;
+  background: cover;
   font-family: 'Poppins';
   margin: 0;
 }
@@ -452,4 +452,40 @@ li {
   order: 0;
   flex-grow: 0;
   margin: 16px 0px;
+}
+
+.h1login{
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  margin-left: 120px;
+  color: #ffffff;
+}
+
+.box-Login {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-Login .input{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.box-Login .input .file, .h1login{
+
+  margin: .5rem 0;
+}
+
+.box-Login .input .button {
+
+    color: #475069;
+    margin: .5rem 0;
+    width: 100%;
 }
