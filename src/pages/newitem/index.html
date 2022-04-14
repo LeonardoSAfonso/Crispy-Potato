@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
   <title>Navbar</title>
 </head>
 
@@ -26,16 +26,22 @@
           <li><a href="#" class="nav-item">Filmes</a></li>
           <li><a href="#" class="nav-item">Series</a></li>
           <li><a href="#" class="nav-item">Animes</a></li>
-          <li><a href="#" class="nav-item">Jogos</a></li>
+          <li><a href="#" class="nav-item">Sing in</a></li>
         </ul>
     </nav>
     </div>
   </header>
-  <h1>Recomendar conteúdo</h1>
-
-  <div class="input">        
-    <input type="text" class="file" value="Busque series, filmes, jogos e animes" class="input1">
-    <button class="button">Search</button>  
+  <h1 class="h1-newitem">Recomendar conteúdo</h1>
+  <br>
+<form>
+  <label class="label-newitem" for="title">Titulo</label><br>
+  <input id="title" type="text" class="input-newitem" placeholder="Digite o nome conteúdo que deseja indicar">
+  <label class="label-newitem" for="title">Descrição</label><br>
+  <textarea id="title" type="text" class="input-newitem" placeholder="Digite a descrição do conteudo que deseja indicar"></textarea>
+</form>
+<br>
+  <div>  
+    <button class="button-newitem" onclick="">ENVIAR</button>  
   </div>
   
 </body>
