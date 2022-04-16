@@ -541,3 +541,29 @@ li {
   flex-grow: 0;
   margin: 0px 8px;
 }
+
+.box-Error{
+  color: #EBEEF5;
+  text-align: center;
+}
+
+.but-error {
+  font-family: 'Poppins';
+  background: #f9c204;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-left: 8px;
+  width: 80px;
+  height: 48px;
+  border: 2px solid #F9C204;
+  border-radius: 12px;
+}
+
+
+.fontError{
+  font-family: 'Poppins';
+  font-style: normal;
+  color: #8E95A9;
+}
