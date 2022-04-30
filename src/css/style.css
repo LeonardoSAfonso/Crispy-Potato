@@ -376,10 +376,6 @@ li {
   border-radius: 8px;
 }
 
-
-
-
-
 .h3home {
   margin-left: 165px;
   margin-top: 100px;
@@ -519,4 +515,25 @@ li {
   color: #ebeef5;
   display: flex;
 
+}
+
+.h1-pages{
+  font-size: 74px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  margin-left: 120px;
+  color: #ebeef5;
+}
+
+.h3-pages{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #BEB7FB;
+  margin-left: 120px;
 }
