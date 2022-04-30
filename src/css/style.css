@@ -6,8 +6,8 @@
 }
 
 body {
-  background: url('../assets/Background.png') #121829 no-repeat;
-  background-size: cover;
+  background: url('../assets/Background.png') #121829;
+  background: cover;
   font-family: 'Poppins';
   margin: 0;
 }
@@ -391,7 +391,7 @@ li {
 
 }
 
-.banner { 
+.banner {
   width: 220px;
   height: 320px; 
   border-radius: 8px;
@@ -479,7 +479,8 @@ li {
   border: 2px solid #F9C204;
   border-radius: 12px;
 }
-.button-newitem:hover{
+
+.button-newitem:hover {
   opacity: 0.8;
 }
 
@@ -498,7 +499,8 @@ li {
   color: #ebeef5;
   display: flex;
 }
-.input-newitem{
+
+.input-newitem {
   font-family: Poppins;
   font-size: 14px;
   padding: 0 16px;
