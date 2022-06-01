@@ -578,3 +578,22 @@ li {
 .box-Login .input .button{
   width: 100%;
 }
+
+.box-Error{
+  color: #EBEEF5;
+  text-align: center;
+  }
+
+  .but-error {
+  font-family: 'Poppins';
+  background: #f9c204;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-left: 100px;
+  width: 80px;
+  height: 48px;
+  border: 2px solid #F9C204;
+  border-radius: 12px;
+  }
