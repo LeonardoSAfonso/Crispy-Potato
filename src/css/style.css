@@ -597,3 +597,72 @@ li {
   border: 2px solid #F9C204;
   border-radius: 12px;
   }
+
+  .links {
+    width: 100%;
+    margin-left: 16px;
+  }
+
+  .box-devs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 16px 16px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 240px;
+  height: 450px;
+  left: 0px;
+  top: 0px;
+  margin: 10px 20px;
+  background: rgba(32, 40, 62, 0.8);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+.box-devs:hover{
+  background: rgba(51, 63, 95, 0.8); 
+  cursor: pointer;
+}
+
+.box-devs:hover .devs-name{
+  width: 90%;
+  color: #F9C204;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.devs-name {
+  width: 90%;
+  color: #ebeef5;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.github {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8241F9;
+}
+
+.linkedin {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #378FE9;
+}
