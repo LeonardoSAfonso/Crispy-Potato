@@ -383,12 +383,11 @@ li {
 }
 
 .filmes {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: fit-content;
-
 }
 
 .banner {
